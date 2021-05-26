@@ -15,21 +15,8 @@ client = discord.Client(intents=intents)
 
 @client.event
 async def on_member_join(member):
-    time.sleep(2)
-    await client.get_channel(837575124101759006).send(f"Welcome to the ProPractice server, {member.mention}!")
     time.sleep(1)
-    await client.get_channel(837575124101759006).send(f"{member.mention} To gain full access to the server, please change your nickname to your real name so the admins can recognize you.\n\n")
-    time.sleep(1)
-    await client.get_channel(837575124101759006).send(f"On PC: Simply right-click the server logo or click on the server name at the top left portion of the screen, and click \"Change Nickname\".")
-    time.sleep(1)
-    await client.get_channel(837575124101759006).send(f"On Mobile: While viewing the channels, click on the server name at the top of the screen and click \"Change Nickname\".")
-    time.sleep(1)
-    await client.get_channel(837575124101759006).send(f"After this, an admin will be able to recognize you and verify you!")
-    time.sleep(1)
-    await client.get_channel(837575124101759006).send(f"{member.mention} If you are having problems with changing your nickname, then you can simply type your name in this channel.")
-    time.sleep(1)
-    await client.get_channel(837575124101759006).send(f"{member.mention} Please be patient as it can take some time to verify each member!")
-    
+    await client.get_channel(837575124101759006).send(f"**__Welcome to the ProPractice server, {member.mention}!__**\n\nTo gain full access to the server, please change your nickname to your real name so the admins can recognize you.\n\n**On PC:** Simply right-click the server logo or click on the server name at the top left portion of the screen, and click \"Change Nickname\".\n**On Mobile:** While viewing the channels, click on the server name at the top of the screen and click \"Change Nickname\".\n\nIf you are having problems with changing your nickname, then you can **simply type your name in this channel.**\n\nAfter this, an admin will be able to recognize you and verify you! **Please be patient as it can take some time to verify each member!**")
 
 
 @client.event
